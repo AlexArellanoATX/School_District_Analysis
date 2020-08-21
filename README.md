@@ -1,7 +1,7 @@
 # School_District_Analysis
 
 
-## Overview of the school district analysis: Explain the purpose of this analysis.
+## Overview of the school district analysis: 
 This analysis project was performed to modify an earlier analysis of school district student data, which included writing Python code to analyze math and reading scores, school size, budget and school type for a dataset of over 39,000 students across 15 schools.  For this analysis project, a subset of student data (all of the math and reading scores from Thomas High School 9th graders) was removed per the school board's request, and we repeated the analysis, modifying the code to recalculate the student math and reading score metrics as well as summary data, without some specific student data. The purpose of removing the specific student data is to give the school board a clearer picture of score performance and summary metrics without data they consider may be have been altered, and may not be reliable.
 
 missing data 
@@ -17,13 +17,14 @@ missing data
 * Jupyter Notebooks 6.03
 * Anaconda 4.8.4
 
-## Results: Using bulleted lists and images of DataFrames as support, address the following questions.
+## Results: 
 
 To modify the Python code to remove the Thomas High School 9th grade student math and reading scores, we replaced these students' scores with the "NaN" data type, ![New_Student_count](./Additional_resources/Reading&Math_scores_replacedwith_Nan.png)  so that these scores do not factor into the analysis. The removed group was 461 students, ![THS_9thGraders_count](./Additional_resources/Thomas_HS_9th_Grade_student_count.png) which bring the total student count down to 38,709 from 39,170
 
 ![New_Student_count](./Additional_resources/New_student_count-after_removing_THS_9thgraders.png) 
 
 * How is the district summary affected?
+
 The District Summary shows that removing Thomas High School 9th graders' scores lowers Average Math Score across the District from 79.0 to 78.9. The percentage of students Passing Math drops from 75.0 to 74.8, the percentage Passing Reading drops from 85.8 to 85.7 and the percentage Overall Passing drops from 65.2 to 64.9
 
 **Original District Summary**
@@ -51,12 +52,15 @@ The School Summary table shows some much larger effect from having removed the T
 
 
 * How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+
 Comparing the modified data analysis to the original analysis shows that Thomas High School's student performance dropped significantly. The percentages of students passing math, reading or passing both decreased by about 25% which indicates the 9th grader's scores really moved those metrics higher for the school.
 
 * How does replacing the ninth-grade scores affect the following:
+
 Replacing the Thomas High School 9th grader scores with null values only takes these grades out of the metrics analyzed, all ofthe grade levels are unaffected.
 
-* Math and reading scores by grade
+* Math and reading scores by grade are unaffected, other than those for 9th graders at Thomas High School, whose scores have been removed
+
 ![Orig_MathScores_byGrade](./Additional_resources/Original_mathscores_bygrade.png) 
 
 ![Modified_MathScores_byGrade](./Additional_resources/Modified_mathscores_bygrade.png) 
@@ -66,11 +70,13 @@ Replacing the Thomas High School 9th grader scores with null values only takes t
 
     * Scores by school spending
 Scores by school spending are unaffected
+
 ![Orig_Spending](./Additional_resources/Original_Spending_by_scores.png) 
 
 ![Modified_Spending](./Additional_resources/Modified_Spending_by_scores.png) 
     
     * Scores by school size
+Scores by school size are unaffected
 ![Orig_Size](./Additional_resources/Original_Size_by_scores.png) 
 
 ![Modified_Size](./Additional_resources/Modified_Size_by_scores.png) 
