@@ -19,7 +19,9 @@ missing data
 
 ## Results: Using bulleted lists and images of DataFrames as support, address the following questions.
 
-To modify the Python code to remove the Thomas High School 9th grade student math and reading scores, we replaced these students' scores with the "NaN" data type, so that these scores do not factor into the analysis. The removed group was 461 students, 
+To modify the Python code to remove the Thomas High School 9th grade student math and reading scores, we replaced these students' scores with the "NaN" data type, so that these scores do not factor into the analysis. The removed group was 461 students, which bring the total student count down to 38,709 from 39,170?
+
+![THS_9thGraders_count](./Additional_Resources/Thomas_HS_9th_Grade_student_count.png) 
 
 * How is the district summary affected?
 The District Summary shows that removing Thomas High School 9th graders' scores lowers Average Math Score across the District from 79.0 to 78.9. The percentage of students Passing Math drops from 75.0 to 74.8, the percentage Passing Reading drops from 85.8 to 85.7 and the percentage Overall Passing drops from 65.2 to 64.9
